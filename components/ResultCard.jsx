@@ -46,7 +46,7 @@ export default function ResultCard({ analysis }) {
     <section className="mt-8 w3-card-panel p-6">
       <div className="mb-6 flex flex-col gap-4 border-b border-[#e5e5e5] pb-5 md:flex-row md:items-center md:justify-between">
         <div>
-          <h2 className="mb-2 text-3xl font-bold text-black">Gemini Resume Review</h2>
+          <h2 className="mb-2 text-3xl font-bold text-black">Resume Review</h2>
           <p className="w3-muted text-[15px]">Your results appear instantly below after analysis.</p>
         </div>
         <div className="w3-chip text-base">ATS Score: {score}</div>

@@ -125,10 +125,16 @@ export default function UploadPage() {
             <h2 className="w3-section-title mb-4 text-2xl font-bold">Resume File</h2>
             <input
               type="file"
-              accept=".pdf,.docx"
-              onChange={(e) => setFile(e.target.files?.[0] ?? null)}
-              className="w3-file mb-4"
+              accept=".pdf,.docx,.txt"
+              onChange={(e) => {
+                setFile(e.target.files?.[0] ?? null);
+                setError("");
+              }}
+              className="w3-file mb-2"
             />
+            <p className="mb-4 text-sm text-[#5f5f5f]">
+              Supported formats: PDF, DOCX, and TXT. Scanned image PDFs may not extract correctly.
+            </p>
             <button
               onClick={handleFileUpload}
               disabled={uploading}
@@ -140,7 +146,7 @@ export default function UploadPage() {
             <h2 className="w3-section-title mb-4 mt-8 text-2xl font-bold">Resume Text</h2>
             <textarea
               className="w3-textarea"
-              style={{resize: 'none'}}
+              style={{ resize: "none" }}
               rows="11"
               placeholder="Extracted resume text will appear here..."
               value={resumeText}
@@ -153,7 +159,7 @@ export default function UploadPage() {
             <textarea
               className="w3-textarea"
               rows="10"
-              style={{resize: 'none'}}
+              style={{ resize: "none" }}
               placeholder="Paste job description here..."
               value={jobDescription}
               onChange={(e) => setJobDescription(e.target.value)}
@@ -162,7 +168,7 @@ export default function UploadPage() {
             <div className="w3-note mt-6">
               <h3 className="mb-2 text-xl font-bold">How it works</h3>
               <p className="text-[15px] leading-7">
-                First extract the resume text, then click analyze. The response is shown immediately below as a styled results component.
+                First extract the resume text, then click analyze. If your PDF is scanned like an image, convert it to a text-based PDF, DOCX, or TXT for better results.
               </p>
             </div>
 
