@@ -1,36 +1,60 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# AI Resume Analyzer
 
-## Getting Started
+[![Next.js](https://img.shields.io/badge/Next.js-16-black?logo=next.js)](https://nextjs.org/)
+[![React](https://img.shields.io/badge/React-19-61dafb?logo=react&logoColor=black)](https://react.dev/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-38bdf8?logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+[![Gemini API](https://img.shields.io/badge/AI-Gemini-4285F4)](https://ai.google.dev/)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](#license)
 
-First, run the development server:
+A professional AI-powered resume review platform built with **Next.js** that extracts resume text from uploaded files and generates an instant **ATS-style analysis** using **Google Gemini**.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Users can upload a resume, paste a job description, and receive structured feedback including an ATS score, strengths, weaknesses, missing keywords, suggestions, recommended skills, formatting feedback, and a rewritten professional summary.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The interface is styled with a clean, beginner-friendly look inspired by **W3Schools**.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Overview
 
-## Learn More
+AI Resume Analyzer helps job seekers quickly evaluate how well their resume matches a target role. Instead of manually reviewing formatting, wording, and keyword relevance, users can upload their resume and get an immediate AI-generated breakdown.
 
-To learn more about Next.js, take a look at the following resources:
+This project is ideal for:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Students preparing their first resume
+- Fresh graduates applying for internships or jobs
+- Developers tailoring resumes for specific positions
+- Anyone wanting fast ATS-style resume feedback before applying
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## Features
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Upload resumes in `PDF`, `DOCX`, or `TXT`
+- Extract readable text from resume files
+- Paste a target job description for role-specific analysis
+- Analyze resumes with **Google Gemini**
+- Display results instantly in a structured UI component
+- Show:
+  - ATS score
+  - strengths
+  - weaknesses
+  - missing keywords
+  - suggestions
+  - recommended skills
+  - formatting and grammar feedback
+  - rewritten professional summary
+- No database required
+- W3Schools-style clean interface
+- Built with Next.js App Router
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## Demo Flow
+
+1. Upload a resume file
+2. Extract the resume text
+3. Paste a job description
+4. Click **Analyze Resume**
+5. View the Gemini-powered resume review instantly on the page
+
+---
